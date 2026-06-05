@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151515;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Variaveis Globais*/
+:root {
+    --color-destaque: #13135A;
+    --color-black: #101010;
+    --color-white: #fafafa;
+}
+
+/* Container principal */
+.container {
+    display: inline;
+    border-radius: 20px;
+    width: 95%;
+    max-width: 400px;
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+}
+
+.content {
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* WIDGET 1: Informações do usuário */
+.widget1 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.widget1 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info-user {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    gap: 0.6rem;
+}
+
+.img-user {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid var(--color-destaque);
+}
+
+.name-user h1 {
+    font-size: 1.2rem;
+    color: var(--color-white);
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.name-user span {
+    color: #fafafab4;
+    font-size: 0.8rem;
+}
+
+.info-icon {
+    width: 45px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.info-icon img {
+    width: 100%;
+    animation: rotate 5s linear infinite;
+}
+
+/* WIDGET 2: Informações CTA2 */
+.widget2 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.4rem;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.widget2 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hard-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.4rem;
+
+    & p {
+        color:var(--color-white);
+        font-weight: bold;
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
+    }
+}
+
+
+.destaque {
+    color: #787881;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.skills-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-icons i {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.skills-icons i:hover {
+    cursor: pointer;
+}
+
+/* Cores específicas para cada ícone */
+.skills-icons .fa-html5:hover {
+    color: #e34f26;
+}
+
+.skills-icons .fa-css3-alt:hover {
+    color: #1572b6;
+}
+
+.skills-icons .fa-js:hover {
+    color: #f7df1e;
+}
+
+.skills-icons .fa-php:hover {
+    color: #777bb4;
+}
+
+.skills-icons .fa-python:hover {
+    color: #3776ab;
+}
+
+.skills-icons .fa-database:hover {
+    color: #00758F;
+}
+
+.skills-icons .fa-github:hover {
+    color: #181717;
+}
+
+
+/* WIDGET 3: Redes sociais e link do site */
+.widget3 {
+    height: 100%;
+    height: 45%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.site {
+    border-radius: 12px;
+    background-color: var(--color-black);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.8rem;
+    box-sizing: border-box;
+    /* Garante que o padding não quebre a altura de 100% */
+}
+
+.text-site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-site h1 {
+    padding-bottom: 0.3rem;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.text-site span {
+    color: #fafafab4;
+    font-size: 0.8rem;
+}
+
+/* CONTAINER DA IMAGEM */
+.img-site {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* Centraliza a tag img horizontalmente */
+    align-items: center;
+    /* Centraliza a tag img verticalmente */
+    border-radius: 8px;
+    /* Removido o background-image e o justify-content antigo */
+}
+
+/* A IMAGEM EM SI */
+.img-site img {
+    width: auto;
+    /* Altera para auto para não distorcer */
+    max-width: 60%;
+    /* Controla o tamanho máximo que ela pode ocupar */
+    max-height: 100%;
+    /* Garante que não ultrapasse os 100px da div pai */
+    object-fit: contain;
+    /* Mantém a proporção da imagem */
+}
+
+/* Redes sociais */
+.redes-sociais {
+    border-radius: 12px;
+    width: 50%;
+    height: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    background-color: var(--color-black);
+    border-radius: 10px;
+    width: 45%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociais i {
+    font-size: 2.8rem;
+    color: var(--color-white);
+}
+
+.redes-sociais .whatsapp:hover i {
+    color: #25D366;
+    transition: color 0.3s;
+}
+
+.redes-sociais .instagram:hover i {
+    color: #E1306C;
+    transition: color 0.3s;
+}
+
+.redes-sociais .linkedin-i:hover i {
+    color: #0077B5;
+    transition: color 0.3s;
+}
+
+.redes-sociais .mail:hover i {
+    color: #808080;
+    transition: color 0.3s;
+}
+
+/* WIDGET 4: Call to action adicional */
+.widget4 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-destaque);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    padding: 1rem;
+    box-sizing: border-box; /* Garante que o padding não quebre o cálculo de altura */
+}
+
+.cta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alterado de 'start' para 'center' para centralizar o conjunto */
+    gap: .8rem;
+    text-decoration: none;   /* Remove o sublinhado padrão de links */
+}
+
+.cta i {
+    font-size: 40px;
+    color: var(--color-white);
+}
+
+.cta h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    margin: 0;               /* Remove margens padrões do h1 que causam desalinhamento vertical */
+}
+
+
+/* WIDGET 5: Embeds do Spotify */
+.widget5 {
+    width: 100%;
+    height: 32%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.widget5 span {
+    color: #fafafab4;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.servicos-freelancer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1.5rem; /* Dá um espaçamento do botão de agendamento */
+    padding: 0 0.5rem;
+}
+
+.servicos-freelancer h2 {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.item-servico {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+/* Estilização dos ícones dos seus serviços */
+.item-servico i {
+    color: var(--color-destaque); /* Usa a cor azul/ciano do seu tema */
+    font-size: 1.1rem;
+    width: 20px; /* Garante que todos os ícones tenham a mesma largura para alinhar o texto */
+    text-align: center;
+}
+
+/* Estilização do texto descritivo */
+.item-servico p {
+    color: #fafafab4;
+    font-size: 0.85rem;
+    margin: 0;
+
+    &:hover {
+        color: var(--color-white);
+        transition: color 0.3s;
+    }
+}
+
+/* ANIMAÇÕES */
+.widget1,
+.widget2,
+.site,
+.box-social,
+.widget4 {
+    transition: transform 0.3s ease;
+}
+
+.widget1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+
+.widget1:hover,
+.widget2:hover,
+.site:hover,
+.box-social:hover,
+.widget4:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
