@@ -415,7 +415,7 @@ a {
 
 /* Estilização dos ícones dos seus serviços */
 .item-servico i {
-    color: var(--color-destaque); /* Usa a cor azul/ciano do seu tema */
+    color: var(--color-white); /* Usa a cor azul/ciano do seu tema */
     font-size: 1.1rem;
     width: 20px; /* Garante que todos os ícones tenham a mesma largura para alinhar o texto */
     text-align: center;
